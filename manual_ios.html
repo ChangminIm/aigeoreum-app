@@ -6,6 +6,11 @@
 <title>iOS 안내 — 아이걸음</title>
 <link rel="icon" type="image/png" href="./icon.png">
 <style>
+@font-face{
+  font-family:'NanumSquareEB';
+  src:url('./NanumSquareEB.ttf') format('truetype');
+  font-weight:800;font-display:swap;
+}
 :root{
   --kk-green:#00703E;
   --kk-green-dark:#00512d;
@@ -19,6 +24,7 @@
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Segoe UI','Malgun Gothic',sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
 a{color:inherit}
+h1,h2{font-family:'NanumSquareEB','Segoe UI','Malgun Gothic',sans-serif}
 .hero{background:linear-gradient(135deg,var(--kk-green-dark) 0%,var(--kk-green) 55%,var(--kk-green-light) 100%);color:#fff;padding:34px 24px 40px;text-align:center}
 .hero .nav{max-width:860px;margin:0 auto 18px;display:flex;justify-content:flex-start}
 .hero .nav a{font-size:13.5px;font-weight:600;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);padding:8px 16px;border-radius:9px;text-decoration:none;transition:.15s}
