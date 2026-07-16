@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>안드로이드 설치·사용 매뉴얼 — 아이걸음</title>
+<link rel="icon" type="image/png" href="./icon.png">
+<style>
+:root{
+  --kk-green:#00703E;
+  --kk-green-dark:#00512d;
+  --kk-green-light:#0a8c52;
+  --kk-accent:#00a86b;
+  --ink:#1f2937;
+  --muted:#6b7280;
+  --bg:#f4f7f5;
+  --card:#ffffff;
+  --border:#e5e9e7;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','Malgun Gothic',sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+a{color:inherit}
+
+.hero{background:linear-gradient(135deg,var(--kk-green-dark) 0%,var(--kk-green) 55%,var(--kk-green-light) 100%);color:#fff;padding:34px 24px 40px;text-align:center}
+.hero .nav{max-width:860px;margin:0 auto 18px;display:flex;justify-content:space-between;align-items:center}
+.hero .nav a{font-size:13.5px;font-weight:600;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);padding:8px 16px;border-radius:9px;text-decoration:none;transition:.15s}
+.hero .nav a:hover{background:rgba(255,255,255,.3)}
+.hero h1{font-size:26px;font-weight:800;letter-spacing:-.4px;margin-bottom:6px}
+.hero .subtitle{font-size:13.5px;opacity:.92}
+
+.wrap{max-width:860px;margin:0 auto;padding:0 24px 40px}
+.section{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:28px 30px;margin-top:24px;box-shadow:0 6px 20px rgba(3,107,63,.06)}
+.section h2{font-size:19px;font-weight:800;color:var(--kk-green-dark);margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.section h3{font-size:15.5px;font-weight:700;margin:18px 0 8px}
+.section p,.section li{font-size:14.5px;color:var(--ink)}
+.section .muted{color:var(--muted);font-size:13.5px}
+.section ol,.section ul{padding-left:22px;display:flex;flex-direction:column;gap:8px}
+.callout{background:#eef6f1;border:1px solid #d5e8dd;border-radius:10px;padding:13px 16px;font-size:13.5px;color:var(--kk-green-dark);margin:14px 0}
+.callout.warn{background:#fff7e8;border-color:#f3e2b8;color:#8a6116}
+table{width:100%;border-collapse:collapse;margin:10px 0;font-size:14px}
+th,td{border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top}
+th{background:#eef6f1;color:var(--kk-green-dark);font-weight:700;white-space:nowrap}
+td b{color:var(--kk-green-dark)}
+.kbd{display:inline-block;background:#eef2f0;border:1px solid var(--border);border-radius:6px;padding:1px 8px;font-size:13px;font-weight:600;color:var(--kk-green-dark)}
+.faq .q{font-weight:700;margin-top:14px}
+.faq .a{color:var(--muted);font-size:14px;margin-top:3px}
+
+footer{text-align:center;color:var(--muted);font-size:12.5px;padding:28px 24px 40px;border-top:1px solid var(--border);margin-top:40px}
+footer .credit{margin-top:8px;font-weight:600;color:var(--kk-green)}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="nav">
+    <a href="./index.html">← 홈으로</a>
+    <a href="https://github.com/ChangminIm/aigeoreum-app/releases/latest/download/aigeoreum.apk">⬇ APK 다운로드</a>
+  </div>
+  <h1>📖 안드로이드 설치·사용 매뉴얼</h1>
+  <div class="subtitle">아이걸음 v1.0.3 · 삼성 갤럭시 등 안드로이드 8.0 이상</div>
+</div>
+
+<div class="wrap">
+
+  <div class="section">
+    <h2>1️⃣ 설치하기 <span class="muted">(처음 1회 · 3분)</span></h2>
+    <ol>
+      <li>이 페이지 상단의 <span class="kbd">⬇ APK 다운로드</span> 버튼을 눌러 <b>aigeoreum.apk</b> 파일을 내려받습니다.</li>
+      <li>내려받은 파일을 누릅니다. (알림창 또는 <b>파일 관리 → 다운로드</b> 폴더)</li>
+      <li>"출처를 알 수 없는 앱을 설치할 수 없음" 경고가 뜨면 → <b>설정</b> → <b>"이 출처 허용"</b> 켜기 → 뒤로 → 다시 파일을 눌러 <b>설치</b>.</li>
+      <li>초록 발자국 아이콘의 <b>아이걸음</b>이 생기면 완료.</li>
+    </ol>
+    <div class="callout">💡 이 경고는 Play 스토어 밖에서 설치하는 모든 앱에 뜨는 안내입니다. 아이걸음은 연구팀이 서명한 공식 파일로, 이 페이지에서 받은 파일만 설치해 주세요.</div>
+  </div>
+
+  <div class="section">
+    <h2>2️⃣ 처음 실행 설정 <span class="muted">(처음 1회 · 5분)</span></h2>
+    <ol>
+      <li>앱을 열고 <b>참가자 번호</b>(연구팀이 알려드린 번호)를 입력합니다.</li>
+      <li><b>기록 시작</b>을 처음 누르면 권한 창이 차례로 뜹니다:</li>
+    </ol>
+    <table>
+      <tr><th>권한 창</th><th>선택</th></tr>
+      <tr><td>알림 허용</td><td><b>허용</b></td></tr>
+      <tr><td>위치 액세스</td><td><b>앱 사용 중에만 허용</b> ("정확한 위치" 켜짐 확인)</td></tr>
+      <tr><td>배터리 사용 제한 해제</td><td><b>허용</b></td></tr>
+    </table>
+    <h3>삼성 휴대폰 추가 설정 (앱의 노란 안내 카드)</h3>
+    <ol>
+      <li>휴대폰 <b>설정 → 애플리케이션 → 아이걸음 → 배터리</b> → <b>"제한 없음"</b> 선택</li>
+      <li>휴대폰 <b>설정 → 배터리 → 백그라운드 사용 제한</b> → <b>"절전 예외 앱"</b>에 아이걸음 추가</li>
+      <li>완료 후 앱의 노란 카드에서 <b>"완료했어요"</b> 누르기</li>
+    </ol>
+    <div class="callout warn">⚠ 이 설정을 건너뛰면 화면이 꺼진 동안 기록이 끊길 수 있습니다. 꼭 한 번만 해주세요.</div>
+  </div>
+
+  <div class="section">
+    <h2>3️⃣ 매일 사용법</h2>
+    <table>
+      <tr><th>언제</th><th>무엇을</th></tr>
+      <tr><td>아침 (집을 나서기 전)</td><td>앱 열고 <b>기록 시작</b> (초록 버튼)</td></tr>
+      <tr><td>하루 종일</td><td>아무것도 안 해도 됩니다 — 화면 꺼져도, 다른 앱 써도 기록됩니다</td></tr>
+      <tr><td>저녁 (귀가 후)</td><td><b>기록 종료</b> (빨간 버튼) → <b>보내기</b> → 카카오톡으로 연구팀에 전송</td></tr>
+    </table>
+    <p class="muted">기록 중에는 화면 상단 알림에 "GPS 기록 중"이 표시됩니다.</p>
+  </div>
+
+  <div class="section">
+    <h2>⚠ 꼭 지켜주세요</h2>
+    <ul>
+      <li><b>앱을 위로 밀어서 끄지 마세요</b> (최근 앱 목록에서 제거 금지)</li>
+      <li><b>위치(GPS)는 항상 켜두세요</b></li>
+      <li><b>절전 모드(최대 절전)를 켜지 마세요</b></li>
+      <li><b>매일 밤 충전해 주세요</b> — 하루 기록에 배터리 15~30%를 사용합니다</li>
+    </ul>
+  </div>
+
+  <div class="section faq">
+    <h2>❓ 자주 묻는 질문</h2>
+    <div class="q">Q. 화면을 꺼도 기록되나요?</div>
+    <div class="a">네. 처음 설정만 마치면 화면이 꺼져 있어도, 다른 앱을 쓰는 중에도 계속 기록됩니다.</div>
+    <div class="q">Q. 지하철·엘리베이터에서는요?</div>
+    <div class="a">위성 신호가 없으면 자동으로 잠시 비고, 신호가 잡히면 자동으로 다시 기록됩니다. 따로 조작할 필요 없습니다.</div>
+    <div class="q">Q. 보내기를 깜빡했어요.</div>
+    <div class="a">앱 오른쪽 위 폴더(📁) → 저장된 기록에서 언제든 다시 보낼 수 있습니다. <b>전체 압축해서 보내기</b>로 여러 날 기록을 한 번에 보낼 수도 있습니다.</div>
+    <div class="q">Q. 데이터 요금이 드나요?</div>
+    <div class="a">기록 자체는 인터넷을 쓰지 않습니다(GPS만 사용). 파일을 전송할 때만 하루 약 2~3MB가 쓰입니다.</div>
+    <div class="q">Q. 위치 정보는 어디로 가나요?</div>
+    <div class="a">휴대폰 안에만 저장됩니다. 보호자·참가자가 직접 "보내기"를 눌렀을 때만 연구팀에 전달되며, 연구 목적으로만 사용 후 폐기됩니다.</div>
+  </div>
+
+</div>
+
+<footer>
+  소아비만 지역별 건강격차 해소를 위한 중재프로그램 개발 및 실증연구
+  <div class="credit">MADE BY 임창민 · 국립공주대학교 지리학과</div>
+</footer>
+
+</body>
+</html>
