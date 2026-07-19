@@ -74,6 +74,11 @@ h1,h2,h3,h4,.section-title,.go,.tag,.badge{font-family:'NanumSquareEB','Segoe UI
 .feature-card .go.ghost:hover{background:var(--kk-green);color:#fff;border-color:var(--kk-green)}
 .feature-card .meta{font-size:12px;color:var(--muted);text-align:center;margin-top:2px;line-height:1.6}
 .feature-card .meta b{color:var(--kk-green-dark)}
+/* 데스크톱 전용 QR — 폰으로 바로 옮기기 */
+.feature-card .qr{margin-top:10px;text-align:center}
+.feature-card .qr img{width:132px;height:132px;border:1px solid var(--border);border-radius:12px;padding:6px;background:#fff}
+.feature-card .qr .cap{font-size:11.5px;color:var(--muted);margin-top:6px;line-height:1.45}
+@media(max-width:760px){.feature-card .qr{display:none}}
 @media(max-width:760px){.feature-card{flex-direction:column;align-items:flex-start;padding:32px 28px;gap:22px}.feature-card h2{font-size:24px}.feature-card .actions{align-self:stretch;width:100%}.feature-card .actions .go{flex:1}}
 
 .flist{display:flex;flex-direction:column;gap:8px}
@@ -143,6 +148,10 @@ footer .copy{margin-top:4px;font-size:11.5px;color:#9aa5a0;letter-spacing:.4px}
         <a class="go" href="./아이걸음_v1.1.2.apk" download>⬇ 아이걸음_v1.1.2.apk</a>
         <a class="go ghost" href="./manual_android.html">📖 설치 방법 보기</a>
         <div class="meta"><b>v1.1.2</b> (2026.07.19) · 51MB · Android 8.0 이상</div>
+        <div class="qr">
+          <img src="./qr.png" alt="아이걸음 다운로드 페이지 QR코드">
+          <div class="cap">📱 휴대폰 카메라로 스캔하면<br>이 페이지가 열립니다</div>
+        </div>
       </div>
     </div>
   </div>
